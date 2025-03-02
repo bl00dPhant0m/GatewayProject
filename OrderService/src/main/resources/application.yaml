@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: OrderService
+
+  datasource:
+    username:
+    password:
+    url: jdbc:mysql://localhost:3306/order_db
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8082
