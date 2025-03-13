@@ -14,6 +14,6 @@ public class UserServiceClient {
 
     @GetMapping
     public UserDTO getUser(@RequestParam long id) {
-        return restTemplate.getForObject("http://localhost:8080/users/" + id, UserDTO.class);
+        return restTemplate.getForObject("http://localhost:8081/users/" + id, UserDTO.class);
     }
 }
